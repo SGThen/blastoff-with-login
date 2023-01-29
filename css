@@ -1,0 +1,39 @@
+body
+{
+
+background-image: linear-gradient(rgb(252, 1, 42), rgb(4, 0, 255));
+background-repeat: no-repeat;
+
+}
+h1
+{
+  color:rgb(3, 5, 1);
+  font-size: 100px ;
+  text-align: center;  
+}
+p
+{
+    font-size:20px;
+    font-family:monospace;
+    font-style:italic;
+    font-weight: lighter;
+    color:rgb(0, 0, 0);
+}
+.buttonJC
+{
+    background-color: rgb(12, 238, 65);
+    border-color: black;
+    border-style: solid;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    text-align: center;
+    
+}
+
+img
+{
+    height: 300px;
+    width: 300px;
+    text-align: center;
+}
