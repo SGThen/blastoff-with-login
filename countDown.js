@@ -37,9 +37,8 @@ function countdown() {
 
    
 }
-{
-    alert(function showName())
-          }
+
+    
 function showName() {
     var firstName = document.getElementById("firstName").value;
     var lastName = document.getElementById("lastName").value;
