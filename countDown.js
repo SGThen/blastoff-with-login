@@ -49,7 +49,7 @@ function showName() {
       if (fullName.length > 20) {
         alert("The full name cannot be longer than 20 characters.");
       } else {
-        document.getElementById("displayName").innerHTML = "Hello, " + fullName;
+        document.getElementById("displayName").innerHTML = "Thank you " + fullName;
       }
     }
   }
@@ -60,5 +60,5 @@ function showName() {
       alert("Invalid badge number. Please enter a number with 3 or fewer digits.");
       badgeNumber = prompt("Enter your badge number:");
     }
-    document.getElementById("displayBadgeNumber").innerHTML = "Thank you " + badgeNumber " Access Granted!" ;
+    document.getElementById("displayBadgeNumber").innerHTML =  "Access Granted For Badge Number: " + badgeNumber ;
   }
