@@ -46,7 +46,7 @@ function showName() {
       alert("Please enter both your first and last name.");
     } else {
       var fullName = firstName + " " + lastName;
-      if (fullName.length > 20) {
+      if (fullName.length > 20 || fullName.length < 4) {
         alert("The full name cannot be longer than 20 characters.");
       } else {
         document.getElementById("displayName").innerHTML = "Thank you " + fullName;
