@@ -56,9 +56,9 @@ function showName() {
 
   function validateBadgeNumber() {
     var badgeNumber = document.getElementById("badgeNumber").value;
-    while (isNaN(badgeNumber) || badgeNumber.length > 3 || badgeNumber <= 0) {
+    if (isNaN(badgeNumber) || badgeNumber.length !=> 3 ) {
       alert("Invalid badge number. Please enter a number with 3 or fewer digits.");
       badgeNumber = prompt("Enter your badge number:");
     }
-    document.getElementById("displayBadgeNumber").innerHTML = "Access Granted!" ;
+    document.getElementById("displayBadgeNumber").innerHTML = "Thank you " + badgeNumber " Access Granted!" ;
   }
