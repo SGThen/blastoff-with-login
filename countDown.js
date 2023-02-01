@@ -46,7 +46,7 @@ function showName() {
       alert("Please enter both your first and last name.");
     } else {
       var fullName = firstName + " " + lastName;
-      if (fullName.length > 20 || fullName.length < 4) {
+      if (fullName.length > 20) {
         alert("The full name cannot be longer than 20 characters.");
       } else {
         document.getElementById("displayName").innerHTML = "Thank you " + fullName;
@@ -56,8 +56,8 @@ function showName() {
 // this is for the badge number entry. need to get in a alert as well that i can input and print on the screen. 
   function validateBadgeNumber() {
     var badgeNumber = document.getElementById("badgeNumber").value;
-    if (isNaN(badgeNumber) || badgeNumber.length !=> 3 ) {
-      alert("Invalid badge number.");
+    while (isNaN(badgeNumber) || badgeNumber.length != 3) {
+      alert("Invalid badge number");
       badgeNumber = prompt("Enter your badge number:");
     }
     document.getElementById("displayBadgeNumber").innerHTML =  "Access Granted For Badge Number: " + badgeNumber ;
