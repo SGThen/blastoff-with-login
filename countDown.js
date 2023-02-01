@@ -38,7 +38,7 @@ function countdown() {
    
 }
 
-    
+  //this is for the name entry for the login. need to figure out how to get it in an alert and print on the screen after  
 function showName() {
     var firstName = document.getElementById("firstName").value;
     var lastName = document.getElementById("lastName").value;
@@ -53,7 +53,7 @@ function showName() {
       }
     }
   }
-
+// this is for the badge number entry. need to get in a alert as well that i can input and print on the screen. 
   function validateBadgeNumber() {
     var badgeNumber = document.getElementById("badgeNumber").value;
     if (isNaN(badgeNumber) || badgeNumber.length !=> 3 ) {
