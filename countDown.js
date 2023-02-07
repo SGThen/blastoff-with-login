@@ -35,10 +35,11 @@ function countdown() {
         
     }
 
-   
+       
 }
 
-  //this is for the name entry for the login. need to figure out how to get it in an alert and print on the screen after  
+//this is the name login function.
+
 function showName() {
     var firstName = document.getElementById("firstName").value;
     var lastName = document.getElementById("lastName").value;
@@ -53,7 +54,8 @@ function showName() {
       }
     }
   }
-// this is for the badge number entry. need to get in a alert as well that i can input and print on the screen. 
+
+  //badge number validation for 3 number and no more. added an alert and was able to submit badge number on the alert or prompt
   function validateBadgeNumber() {
     var badgeNumber = document.getElementById("badgeNumber").value;
     while (isNaN(badgeNumber) || badgeNumber.length != 3) {
@@ -62,3 +64,24 @@ function showName() {
     }
     document.getElementById("displayBadgeNumber").innerHTML =  "Access Granted For Badge Number: " + badgeNumber ;
   }
+
+//these are for the start and stop buttons. need to find a way to see if they are working.
+
+  function toggleStartBtn(enable) {
+    document.getElementById("startBtn").disabled = !enable;
+  }
+
+  function toggleStopBtn(enable) {
+    document.getElementById("stopBtn").disabled = !enable;
+  }
+
+  document.getElementById("startBtn").onclick = function() {
+    toggleStartBtn(false);
+    toggleStopBtn(true);
+  }
+
+  document.getElementById("stopBtn").onclick = function() {
+    toggleStopBtn(false);
+    toggleStartBtn(true);
+  }
+  
