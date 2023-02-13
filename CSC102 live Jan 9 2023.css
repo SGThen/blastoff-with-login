@@ -2,7 +2,7 @@ body
 {
 
 background-image: linear-gradient(rgb(252, 1, 42), rgb(4, 0, 255));
-background-repeat: no-repeat;
+background-repeat: repeat-X;
 
 }
 h1
@@ -19,6 +19,9 @@ p
     font-weight: lighter;
     color:rgb(0, 0, 0);
 }
+
+
+
 .buttonJC
 {
     background-color: rgb(12, 238, 65);
@@ -37,3 +40,39 @@ img
     width: 300px;
     text-align: center;
 }
+
+.buttonJJ
+{
+    background-color: blue;
+    border-color: black;
+    border-style: solid;
+    height: 75px;
+    width: 75px;
+    border-radius: 10px;
+}
+
+.buttonSS
+{
+    background-color: red;
+    border-color: blue;
+    border-style: solid;
+    height: 75px;
+    width: 75px;
+    border-radius: 10px;
+}
+
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 5px;
+    background-color: black;
+    color: white;
+  }
+  
+  th {
+    background-color: lightgray;
+    font-weight: bold;
+    color:black;
+    border: 1px solid black;
+  }
