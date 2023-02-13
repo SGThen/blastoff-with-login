@@ -67,21 +67,15 @@ function showName() {
 
 //these are for the start and stop buttons. need to find a way to see if they are working.
 
-  function toggleStartBtn(enable) {
-    document.getElementById("startBtn").disabled = !enable;
-  }
+var audio = document.getElementById("myAudio");
+      
+document.getElementById("playBtn").addEventListener("click", function() {
+  audio.play();
+});
 
-  function toggleStopBtn(enable) {
-    document.getElementById("stopBtn").disabled = !enable;
-  }
+document.getElementById("pauseBtn").addEventListener("click", function() {
+  audio.pause();
+});
 
-  document.getElementById("startBtn").onclick = function() {
-    toggleStartBtn(false);
-    toggleStopBtn(true);
-  }
 
-  document.getElementById("stopBtn").onclick = function() {
-    toggleStopBtn(false);
-    toggleStartBtn(true);
-  }
-  
+
