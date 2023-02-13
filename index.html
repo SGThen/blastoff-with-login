@@ -10,109 +10,106 @@
         var currentDate = new Date();
         document.getElementById("updated-date").innerHTML = currentDate;
      </script>
-     
 </head>
-
-
-  
-
-
-<!--Buttons for the login at the top fo the page-->
-
 <body>
-<input type="text" id="firstName" placeholder="Enter your first name">
-<br>
-<input type="text" id="lastName" placeholder="Enter your last name">
-<br>
-<button onclick="showName()">Log In</button>
-<!--adding some breaks to make it look the way i want it to-->
-<br>
-<br>
-<br>
+<!--landing page for the pages-->
+<p>
+    Welcome to my landing page for the UAT space program. Choose your path below
+    <br/>
+    <br/>
+    <!--building the button for the redirect to the new pages-->
+    <a class="buttonJC" href="project 1.html">Click Me for timer page!!!!</a>
+    <!--Didnt know how to extend my background so i added a bunch of breaks-->
+    <br/>
+    <br/>
+    <a class="buttonJC" href="project 2.html">Click Me for stats page!!!!</a>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    Click below to make the page live
+    <br/>
+    <br/>
+    <!--toggle button. need to add in the live version of this-->
+    <button id="toggleButton">Live</button>
 
+<script>
+const toggleButton = document.getElementById("toggleButton");
 
-<input type="text" id="badgeNumber" placeholder="Enter your badge number">
-<br>
-    <button onclick="validateBadgeNumber()">Validate Badge Number</button>
-
-    <p id="displayName"> 
-        <p id="displayBadgeNumber">
-
-        </p>
-    </p>
+toggleButton.addEventListener("click", function() {
+  if (toggleButton.innerHTML === "Off") {
+    toggleButton.innerHTML = "On";
    
-
-
-    <!--making the alert function-->
-    <script>
-        alert ("This is a live page!!");
-        
-        
-    </script>
-    <!--adding the image of the UAT space. I finally figuered out how to center the image-->
-    <div style="text-align: center;">
-    <img src="UATspaceLogo-2 (1).jpg" alt="">
-    </div>
-    <!--adding my first header-->
-    <h1>
-        UAT Space Program
-    </h1>
-    <!--trying out the paragraph function-->
-    <p>
-        
-        This is the UAT space program website for updates and data stream of the third launch mission. 
-        <!--found out that you can put breaks in the middle of the paragragh so you can bump lines-->
-        <br>
-        Stay tuned for more information as this page is built throughout the semester. 
-
-    </p>
-<!--Start and stop buttons. Need to find something to link this to.-->
-    <button id="startBtn">Start</button>
-    <button id="stopBtn">Stop</button>
-
-
-    <!--BREAK IN THE PAGE-->
-    <br>
-    <!--adding music via a start/stop button-->
-    <p>
-        Some Music for your listening pleasure
-    <audio id="myAudio">
-        <source src="sound.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-      <!--Buttons-->
-      <button id="playBtn">Play</button>
-      <button id="pauseBtn">Pause</button>
-      <!--the JS to run the music-->
-      <script>
-        var audio = document.getElementById("myAudio");
-      
-        document.getElementById("playBtn").addEventListener("click", function() {
-          audio.play();
-        });
-      
-        document.getElementById("pauseBtn").addEventListener("click", function() {
-          audio.pause();
-        });
-      </script>
-      </p>
+  } 
+  //cannont figure out how to make this work. this is a work in progress
+  alert("this page is now live");
+  else {
+    toggleButton.innerHTML = "Off";
+  }
+});
+</script>
+<!--syling the buttons and what they do right here instead of in the CSS file-->
+<style>
+    #toggleButton {
+      background-color: rgb(196, 5, 5);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
     
-    <!--making my start countdown button. also figured out how to center the button on the page. super excited-->
-    <div style="text-align: center;">
-    <button class="buttonJC" onclick="startTimer()">Start Count Down</button>
-    <h1 id="timer">Start the Count Down</h1>
-    </div>
-    <br>
-    <!--a reload page button for ease of use on the page. -->
-    <button onclick= "location.reload()"style="background-color: blue; color: white; padding: 10px 20px;">Refresh Page!!
-    </button>
-    <!--Putting my name on the page and claiming this work as mine-->
-    <p>
-        This page is built and maintained by UAT student James Sisterhen. 
-        <br>
-    </p>
- 
- 
-<!--the end-->
+    #toggleButton.on {
+      background-color: green;
+      color: white;
+    }
+    </style>
+    
+   <!--more of the toggle button script-->
+    
+    <script>
+    const toggleButton = document.getElementById("toggleButton");
+    
+    toggleButton.addEventListener("click", function() {
+      toggleButton.classList.toggle("on");
+    });
+    </script>
+    <!--a bunch of breaks to elongate the page becuase i do not want white space on the page-->
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+        <!--Putting my name on the page and claiming this work as mine-->
+        <p>
+            This page is built and maintained by UAT student James Sisterhen. 
+            <br>
+        </p>
+</p>
 </body>
 </html>
